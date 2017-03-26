@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+
+	<title>Chocolate Trivia</title>
+
+  <link href="reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+<!--Total Trivia Game 
+Trivia game about chocolate - the world's greatest food!! 
+
+Players will be greeted to the game with the large title "Chocolate Trivia"
+There will be a box with a welcome and game instructions-10 questions - 30 seconds to answer -There will be a button called "start"  below the welcome in the middle of the page
+
+Upon clicking the start button, the button will disappear and the game will begin - players will be shown 1 question at a time - they have 30 seconds to guess - there will be  an option of 4 answers - only 1 is right - the timer will countdown.  If it reaches 0 without an answer, the correct answer is displaye and the wrong answer log is increased by 1 after 5 seconds, the next question is displayed
+
+If the correct answer is selected - a popup picture saying you are right pops up and the answers correct log is increased by 1
+
+Game will cycle through all 10 questions. At the end, the correct # of answers will be displayed as well as the incorrect # of answers.  They will also be given a rating as to their level of chocolate expertise.  Then given the option of restarting the game.-->  
+
+<div class = "container">
+
+	<h1>Chocolate Trivia</h1>
+	<h3> The World's Greatest Food!</h3>
+
+  <br>
+  <h4 style="display:none;"id="counter">Time Remaining:  </h4>
+
+
+<div class="start">
+	
+	<button id="start"><img src="assets/images/startButton.jpg" height="100"></button>
+
+
+</div><!--End start -->
+
+    <div id="outOfTime" style="display:none;">
+      
+    </div>
+
+    <div id="wrong" style = "display: none;"><img src="assets/images/Wrong.jpg" height = "250px"></div>
+
+    <div id="right" style = "display: none;"><img src="assets/images/Right.jpg" height = "200px"></div>
+
+    <div id="buzzer" style = "display: none;"><img src="assets/images/timesUp.jpg" height = "200px"></div>
+
+
+
+    
+<div id= "quizContainer" class = "container" style="display:none;">
+  <div class = "title" > Chocolate Trivia </div>
+
+    
+
+      <div id="question" class="question"></div>
+
+      <label class="option"><input type="radio" name="option" value="1"/> <span id="opt1"></span></label>
+      <label class="option"><input type="radio" name="option" value="2"/> <span id="opt2"></span></label>
+      <label class="option"><input type="radio" name="option" value="3"/> <span id="opt3"></span></label>
+      <label class="option"><input type="radio" name="option" value="4"/> <span id="opt4"></span></label>
+
+      <br> <br><br><br>
+
+      <button> <id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+
+
+
+</div>
+
+  <div id="result" class="container result" style="display: none;">
+      
+       <p id="rAnswer">Right Answers</p>
+       <br>
+       <p id="wAnswer">Wrong Answers</p>
+
+    <div class="restart">  
+    <button id="restart" onclick="start()"><img src="assets/images/playAgain.jpg" height="100"></button>
+        </div>
+    
+      </div>
+    
+</div> <!--End container -->
+
+
+
+<!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+body{
+  font-size: 20px;
+  font-family: 'Georgia','Times','Times New Roman','serif';
+  line-height: 32px;
+  background-image: url('../images/chocolateBackground.jpg');
+}
+
+.container{
+	display: block;
+	margin-top:50px;
+	
+	
+	background-color: #ffffff;
+	border-style:solid;
+	border-color: #DEB887;
+}
+
+h1,h3{
+	text-align: center;
+	border-style:solid;
+	font-family: "Times New Roman", Times, serif!important;
+	border-color: #A9A9A9;
+	background-color: #FAEBD7;
+
+
+}
+
+h4{
+	margin-bottom: 50px;
+}
+
+.title{
+  font-size: 20px;
+  font-family: 'Georgia','Times','Times New Roman','serif';
+}
+
+#buzzer,#right,#wrong,#outOfTime{
+	padding:20px;
+	display:block;
+	width:500px;
+	height:200px;
+	text-align: center;
+	margin-bottom: 50px;
+	width:100%;
+}
+
+#imageCont{
+	display:block; 
+	width:550px;
+	height:300px;
+
+}
+
+
+#quizContainer{
+	padding:50Spx;
+	display:block;
+	width:500px;
+	height:200px;
+	text-align: center;
+	margin:auto;
+	margin-bottom: 50px;
+	width:100%;
+} 
+
+#result{
+	padding:50Spx;
+	display:block;
+	width:500px;
+	height:200px;
+	text-align: center;
+	margin:auto;
+	margin-bottom: 50px;
+	width:100%;
+} 
+
+.start{
+	text-align: center;
+	padding:10px;
+
+}
+
+#counter{
+	text-align:center;
+}
+
+#question{
+	text-align: center;
+	padding:25px;
+	font-size: large;
+	font-weight: bold
+	font-family: "Times New Roman", Times, serif!important;
+}
+
+.option{
+	width: 200px;
+	padding-right:25px;
+	margin-right:50px;
+	display: inline-block;
+	vertical-align: middle;
+	float:right;
+}
+
+#restartButton{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+ 
